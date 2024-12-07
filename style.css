@@ -1,0 +1,526 @@
+nav {
+
+    
+    background-image: linear-gradient(to right, grey, pink, black);
+    color: bisque;
+    margin-bottom: 400px;
+    position: fixed;
+    top:0;
+    width:100%;
+    height:80px;
+    z-index: 99999;
+   
+   
+  
+}
+
+nav li {
+    height:64px;
+    list-style: none;
+    
+
+}
+
+.image5{
+    width:10%;
+    height:20%;
+}
+
+
+
+
+
+
+nav a{
+    height:100%;
+    padding:0 20px;
+    font-size:1rem;
+    color:black;
+    display: flex;
+    
+}
+h1{
+    color: bisque;
+    margin-top:55px;
+    margin-left:130px;
+}
+
+nav li:first-child{
+    margin-right:100px;
+}
+
+.image1{
+    margin-right:150px;
+}
+  
+.class3 {
+    
+    margin-left:45px;
+    display: flex;
+}
+  
+
+body{
+    padding-top: 50px;
+    background-image:url(abstract-star-dust-particle-background_110488-460.avif) ;
+    min-height:100vh;
+
+}
+
+
+
+.welcome{
+    margin-top: 15px;
+   
+}
+
+
+.open-menu{
+    margin-top: 10px;;
+    display: none;
+}
+
+.welcome h1{
+    font-size: 30px;
+    
+}
+
+
+
+
+
+
+
+.sidebar1, .sidebar2, .sidebar3 {
+    display: flex;
+     position: relative;
+     margin-top:67px;
+     margin-right: 50px;
+      justify-items: center;
+      justify-content: center;
+     height: 50px;
+     width: 50px;
+     background: bisque;
+     color: black;
+     border-radius: 10px;
+    
+ }
+
+p {
+    color: black;
+    font-size: 100%;
+    font-family: style;
+   
+    text-align: center;
+    
+}
+
+
+
+.intro2 img {
+    width:50%;
+   
+    border-radius: 50%;
+    margin-left: 20%;
+    
+    
+
+}
+
+
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+
+    
+
+
+.intro2 {
+    width:30%;
+    margin-left: 5%;
+    border-radius: 30px;
+    animation:float 2s infinite;
+  
+}
+
+.intro1 {
+    display: block;
+    background-image: linear-gradient(to right, grey, pink);
+    height: 50%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+    padding: 10px;
+  
+   
+
+}
+
+
+
+.reveal{
+ transform: translateX(-150px);
+ opacity: 0;
+ transition: transform 2s,opacity 2s ease-in-out;
+ 
+ margin-top:200px;
+ 
+    
+}
+.reveal.active{
+ transition: 2s;
+ transform:translateX(0px);
+ opacity:1;
+ 
+ margin-top:200px;
+}
+.class5{
+    display:flex;
+    margin-left: 2%;
+}
+.class5 img {
+    width:100px;
+    height:100px;
+    margin-left:5%;
+    margin-top:250px;
+   
+    animation:float 2s infinite;
+}
+
+
+
+
+
+.intro{
+    display:flex;
+    flex-direction: row;
+    width :100%;
+    height:500px;
+}
+
+
+
+.container1{
+   
+    width:350px;
+    transform:translate(0,50%);
+    margin-left:7%;
+    display: flex;
+    flex-direction: column;
+   
+   
+   
+    
+   
+ 
+    
+}
+
+.set1{
+    display:flex;
+    right:0;
+    margin:0
+}
+.set2{
+    display:none;
+    position:fixed;
+    top:0;
+    right:0;
+    flex-direction: column;
+    height:100vh;
+    max-width: 300px;
+    z-index: 9999;
+    background-color:rgba(0, 0, 0, 0.281);
+    transition: 0.6s ease-out;
+    backdrop-filter: blur(10px);
+}
+
+.set2 {
+    display: none; /* Initially hide the sidebar */
+}
+
+.set2.active {
+    display: flex; /* Show sidebar when active */
+}
+
+.set2.hidden {
+    display: none; /* Optionally ensure hidden functionality */
+}
+
+@font-face{
+    font-family:style;
+    src:url(RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family:newstlye;
+    src:url(CinzelDecorative-Bold.ttf);
+}
+
+
+@media screen and (max-width: 600px) {
+   .mobile{
+    display: none;
+   }
+   .open-menu{
+    
+    display: flex;
+    width:100%;
+    height:48px;
+    right:0;
+   
+   }
+
+  
+   
+   .set2 {
+    display: none; /* Initially hide the sidebar */
+}
+
+.set2.active {
+    display: flex; 
+    
+}
+
+.set2.hidden {
+    display: none; /* Optionally ensure hidden functionality */
+}
+
+nav li:first-child{
+    margin-right:0;
+}
+
+.image1{
+    margin-right:15px;
+}
+
+h1{
+    color: bisque;
+    margin-top:55px;
+    margin-left:20px;
+}
+
+.class3{
+    margin-left:0;
+    
+    display: flex;
+    width:100%
+}
+
+
+p {
+    color: black;
+    font-size: 80%;
+    font-family: style;
+   
+    text-align: center;
+    
+}
+
+.style1{
+    color: black;
+    font-size: 10%;
+    font-family: newstyle;
+    background: antiquewhite;
+    text-align: center;
+    border-radius: 50%;
+}
+.resume img{
+    width:20;
+}
+
+
+
+}
+.resume{
+    bottom:0;
+    position: fixed;
+    
+    backdrop-filter: blur(10px);
+    width:100%;
+    height:9%;
+   display: flex;
+  
+   
+}
+.resume ul{
+    list-style: none;
+
+    width:100%;
+    display: flex;
+    
+    
+}
+.space{
+    margin-left: 70%;;
+    
+}
+
+.resume img{
+    width:30px;
+    animation: float 2s infinite ease-in-out;
+    
+   bottom:0;
+}
+
+.resume li{
+    margin-right: 10%;
+    
+    
+}
+   
+.style1{
+    color: black;
+    font-size: 150%;
+    font-family: newstyle;
+    background: antiquewhite;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+
+.intro3{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.image2{
+    width:12%;
+
+    margin-left:20%;
+    animation:float 2s infinite;
+    
+
+}
+.image3{
+    
+    width:35%;
+    margin-left:10%;
+    margin-top:30px;
+    margin-bottom:10px;
+    animation:float 2s infinite;
+    
+   
+}
+.container {
+    width:70%;
+    
+    background-color: rgb(192, 192, 192); 
+    border-radius: 30px;
+  
+}
+
+.skill { 
+    background-color: rgb(194, 92, 152); 
+    color: white; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+    border-radius: 15px; 
+
+} 
+
+.html{
+    width:60%;
+}
+.python{
+    width:80%;
+}
+
+.animate {
+    animation: slideInFromTop 2s ease-in-out;
+    top:200px;
+    margin-top:200px;
+   
+   
+   
+    
+    
+}
+
+
+
+.pulse {
+    
+    animation: pulse 2s ease-in-out;
+    top:200px;
+    margin-top:200px;
+  
+}
+
+.Experience{
+    
+    
+    background-image: linear-gradient(to right, grey, pink);
+    height:250px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    
+    
+    border-radius: 20px;
+    padding: 10px;
+
+    
+    
+
+}
+
+.education{
+    background-image: linear-gradient(to right, grey, pink);
+    height: 250px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-left:8%;
+    
+    margin-bottom:300px;
+    
+    border-radius: 20px;
+    padding: 10px;
+   
+   
+   
+
+}
+
+
+
+
+
+
+
+
+
